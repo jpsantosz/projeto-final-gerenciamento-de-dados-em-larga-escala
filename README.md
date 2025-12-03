@@ -85,42 +85,6 @@ Este projeto realiza uma análise abrangente de reviews de jogos da Steam, explo
    - Jogos com maior porcentagem de reviews negativos (mínimo 100 reviews)
    - Identificação de jogos mais mal avaliados proporcionalmente
 
-6. **Benchmark: Spark vs Pandas**
-   - Comparação de tempo de leitura do dataset
-   - Demonstração de escalabilidade
-
-## 🚀 Como Executar
-
-### Pré-requisitos
-```bash
-# Instalar dependências
-pip install pyspark==3.5.0
-pip install matplotlib seaborn
-```
-
-### Executar no Google Colab
-
-1. **Montar Google Drive:**
-```python
-from google.colab import drive
-drive.mount('/content/drive')
-```
-
-2. **Fazer upload do dataset** para o Google Drive
-
-3. **Executar o notebook** `Trabalho_Final_Big_Data.ipynb`
-
-### Configuração do Spark
-```python
-from pyspark.sql import SparkSession
-
-spark = SparkSession.builder \
-    .appName("SteamReviews") \
-    .config("spark.executor.memory", "4g") \
-    .config("spark.driver.memory", "4g") \
-    .getOrCreate()
-```
-
 ## 📊 Principais Resultados
 
 ### Estatísticas Gerais
@@ -145,21 +109,6 @@ spark = SparkSession.builder \
    - Para o volume de dados analisado, ambas tecnologias são viáveis
    - Spark escala melhor para datasets maiores
 
-## 📁 Estrutura do Projeto
-```
-steam-reviews-analysis/
-│
-├── Trabalho_Final_Big_Data.ipynb    # Notebook principal
-├── README.md                         # Documentação
-├── dataset.csv                       # Dataset (não incluído - baixar separadamente)
-│
-└── outputs/                          # Gráficos gerados (opcional)
-    ├── distribuicao_geral.png
-    ├── top10_reviews.png
-    ├── sentimento_top10.png
-    └── benchmark_spark_pandas.png
-```
-
 ## 🎓 Conceitos de Big Data Aplicados
 
 ### Volume
@@ -183,36 +132,6 @@ steam-reviews-analysis/
 - Insights sobre satisfação dos jogadores
 - Identificação de padrões de sucesso/fracasso
 - Base para recomendações e análises futuras
-
-## 🔮 Possíveis Extensões
-
-- [ ] Implementar modelo de ML para classificação de sentimentos no texto
-- [ ] Análise temporal da evolução de reviews ao longo do tempo
-- [ ] Sistema de recomendação baseado em similaridade de reviews
-- [ ] Análise de tópicos (LDA) nos textos dos reviews
-- [ ] Dashboard interativo com Streamlit
-- [ ] Processamento de reviews em tempo real com Spark Streaming
-- [ ] Análise de correlação entre número de votos e sentimento
-
-## 👥 Autor
-
-**GetBrain**
-- Projeto desenvolvido para a disciplina de Gerenciamento de Dados em Larga Escala
-- Tecnologia Startup focada em IA e automação
-
-## 📝 Licença
-
-Este projeto foi desenvolvido para fins educacionais.
-
-Dataset: [Steam Reviews Dataset by Andrew Maranhão](https://www.kaggle.com/datasets/andrewmvd/steam-reviews) (CC0: Public Domain)
-
-## 🙏 Agradecimentos
-
-- Kaggle pela disponibilização do dataset
-- Comunidade Apache Spark
-- Google Colab pela infraestrutura gratuita
-- Professores e colegas da disciplina
-
 ---
 
 **Data:** Dezembro 2024  
