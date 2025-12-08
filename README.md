@@ -137,3 +137,4 @@ Este projeto realiza uma análise abrangente de reviews de jogos da Steam, explo
 **Data:** Dezembro 2024  
 **Disciplina:** Gerenciamento de Dados em Larga Escala  
 **Ferramentas:** PySpark 3.5.0, Python 3.12, Matplotlib, Google Colab
+**Alunos:** Filipe Fonseca Bittencourt e João Pedro dos Santos Cavalcante
