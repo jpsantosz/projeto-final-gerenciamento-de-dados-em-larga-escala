@@ -1,4 +1,4 @@
-# 🎮 Análise de Reviews da Steam com PySpark e Machine Learning
+# 🎮 Análise de Reviews da Steam com PySpark
 
 Projeto final da disciplina de Gerenciamento de Dados em Larga Escala que explora análise de sentimentos em reviews de jogos da plataforma Steam utilizando PySpark, MLlib e visualizações com Matplotlib.
 
